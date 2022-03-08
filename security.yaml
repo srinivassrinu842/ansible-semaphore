@@ -3,11 +3,9 @@
   hosts: all
   
   tasks:
-  - name: Whoami
+  - name: whomai
     shell: whoami
-    become: yes
     register: user
     
-  - name: print
-    debug: 
+  - debug:
       msg: "logged in as {{ user.stdout }}"
