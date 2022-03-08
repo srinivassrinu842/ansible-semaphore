@@ -1,0 +1,12 @@
+---
+- name: Testing
+  hosts: all
+  
+  tasks:
+  - name: Whoami
+    shell: whoami
+    become: yes
+    register: user
+    
+  - name: print
+    debug: "{{ msg }}"
