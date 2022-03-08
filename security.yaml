@@ -6,6 +6,7 @@
   - name: whomai
     shell: whoami
     register: user
+    become: yes
     
   - debug:
       msg: "logged in as {{ user.stdout }}"
