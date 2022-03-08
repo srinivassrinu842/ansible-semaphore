@@ -9,4 +9,5 @@
     register: user
     
   - name: print
-    debug: "{{ msg }}"
+    debug: 
+      msg: "logged in as {{ user }}"
