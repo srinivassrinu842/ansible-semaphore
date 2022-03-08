@@ -1,10 +1,10 @@
 ---
 - name: Test
   hosts: all
+  become: yes
   
   tasks:
   - name: install tree
     package:
        name: tree
        state: present
-    become: true
