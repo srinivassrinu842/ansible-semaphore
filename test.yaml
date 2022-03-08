@@ -1,0 +1,9 @@
+---
+- name: Test
+  hosts: all
+  
+  tasks:
+  - name: install tree
+    package:
+       name: tree
+       state: present
