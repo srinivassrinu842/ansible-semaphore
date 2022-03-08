@@ -10,4 +10,4 @@
     
   - name: print
     debug: 
-      msg: "logged in as {{ user }}"
+      msg: "logged in as {{ user.stdout }}"
